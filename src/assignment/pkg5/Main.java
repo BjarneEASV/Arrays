@@ -9,7 +9,7 @@ package assignment.pkg5;
  *
  * @author thor1
  */
-public class Assignment5 {
+public class Main {
 
     /**
      * @param args the command line arguments
