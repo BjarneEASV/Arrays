@@ -19,6 +19,13 @@ public class LottoGenerator
     int max;
     int min;
     
+    /**
+    * Metoden benytter input til at tække numre samt begrænse max- og minimum værdierne som kan forkomme.
+    * i-loop: til tildeler et random tal til arrayen of og sikre sig i j-loop at de ikke er de samme: det gør den ved
+    * at tjekke om hver index i arrayen er lige med det tal den lige har fået tildelt i i-loopet. hvis den finder en
+    * værdi den er lige med så så til deler den en ny værdig og starte tjekke processen forfra. samme gælder når den skal
+    * tildele til til extranummerne(lykketal)
+    */
     public void drawTheNumbers(int numberOfPulls, int numberOfExtraPulls, int maxPull, int minPull)
     {
         System.out.println("drawing numbers");
@@ -65,6 +72,11 @@ public class LottoGenerator
                 );
     }
     
+    /**
+    * denne metode sortere tallene ved at finde dens rigtige plads efter hånden som den tjekker tal rækken igennem.
+    * i-loop agere som indikator for hvor den er i arrayens index, og j-loop rykker den så tilbage ved at tjekke om den
+    * er mindre end det tal der er bagved den.
+    */
     public void sortLottoNumber()
     {
         int temp;
